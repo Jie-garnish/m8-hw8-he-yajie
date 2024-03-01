@@ -41,11 +41,20 @@ header a {
   color: var(--off-white);
   text-decoration: none;
 }
+header a:hover {
+  color:#FDD219;
+}
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+main a:hover {
+  color:#FFFFFF;
+  background-color: #FA5456
 }
 /* end article link transitions */
 
@@ -103,8 +112,8 @@ section.hero > button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-section.hero > button: hover {
-  background-color: #FDD219l;
+section.hero > button:hover {
+  background-color: #FDD219;
 }
 
 main article {
